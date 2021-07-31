@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 去除展开项的样式 */
+.el-icon-arrow-down:before {
+    display: none;
+}
+
+.el-card__header {
+    padding: 10px 20px;
+    border-bottom: 0;
+}
+
+.el-card__body {
+    padding: 0 20px 20px;
+}
+
+li[class*="is-active"],
+li[class*="is-opened"] {
+    background-color: transparent !important;
+}
+
+li[class*="is-opened"] .el-submenu__title {
+    background-color: transparent !important;
+}
